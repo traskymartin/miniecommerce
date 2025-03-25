@@ -79,4 +79,9 @@ public class ProductService implements ProductServiceImpl {
             return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Not saved");
         }
     }
+
+    @Override
+    public ResponseEntity<String> updateProduct(String token, ProductRequest productRequest) {
+        return null;
+    }
 }
